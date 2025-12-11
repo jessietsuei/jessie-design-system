@@ -14,11 +14,11 @@ function Button({
   onClick 
 }: ButtonProps) {
   
-  const baseStyles = 'font-medium rounded-md transition-colors';
+  const baseStyles = 'font-body rounded-md transition-colors';
   
   const variants = {
-    primary: 'bg-primary-500 text-white hover:bg-primary-600',
-    secondary: 'bg-neutral-200 text-neutral-800 hover:bg-neutral-300',
+    primary: 'bg-cello-600 text-white hover:bg-cello-700',
+    secondary: 'bg-black-100 text-black-800 hover:bg-black-200',
   };
   
   const sizes = {
