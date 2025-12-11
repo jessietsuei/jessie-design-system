@@ -16,7 +16,8 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1 className="text-red-500">Vite + React</h1>
+      <h1 className="font-heading text-4xl text-cello-700">My Design System</h1>
+<p className="font-body text-base text-black-600">Using my actual Figma tokens</p>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
