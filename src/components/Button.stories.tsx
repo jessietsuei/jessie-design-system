@@ -41,4 +41,3 @@ export const Large: Story = {
     children: 'Large Button',
   },
 };
-
