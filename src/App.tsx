@@ -1,30 +1,31 @@
 import Button from './components/Button'
-import Input from './components/Input'
 import Card from './components/Card'
 
 function App() {
+  const flavours = [
+    'Vanilla', 'Chocolate', 'Strawberry', 'Mint Chip', 'Cookie Dough',
+    'Salted Caramel', 'Pistachio', 'Mango', 'Raspberry', 'Coffee',
+    'Cookies & Cream', 'Bubblegum', 'Honeycomb', 'Matcha', 'Coconut',
+    'Peanut Butter', 'Cherry', 'Lemon', 'Blueberry', 'Tiramisu'
+  ];
+
   return (
-    <div className="min-h-screen bg-black-50 p-lg">
+    <div className="min-h-screen bg-cream p-lg">
+      <h1 className="font-heading text-4xl text-cello-800 text-center mb-lg">
+        WELCOME TO JESSIE'S BUTTON KINGDOM
+      </h1>
+      
       <Card padding="lg">
-        <h1 className="font-heading text-2xl text-cello-800 mb-md">Sign In</h1>
-        
-        <div className="flex flex-col gap-md">
-          <Input 
-            label="Email" 
-            type="email" 
-            placeholder="you@example.com" 
-          />
-          
-          <Input 
-            label="Password" 
-            type="password" 
-            placeholder="Enter password" 
-          />
-          
-          <div className="flex gap-sm mt-sm">
-            <Button variant="primary">Sign In</Button>
-            <Button variant="secondary">Cancel</Button>
-          </div>
+        <div className="flex flex-wrap gap-md">
+          {flavours.map((flavour, index) => (
+  <Button 
+    key={flavour} 
+    variant={index % 2 === 0 ? 'primary' : 'secondary'}
+  >
+    {flavour}
+  </Button>
+))}
+  
         </div>
       </Card>
     </div>
