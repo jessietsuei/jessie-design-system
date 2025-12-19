@@ -26,6 +26,8 @@ export default {
         '6xl': '60px',
       },
       fontWeight: {
+        normal: '400',
+        medium: '450',
         heading: '400',
         body: '450',
       },
